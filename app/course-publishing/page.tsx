@@ -1,15 +1,23 @@
 import Link from 'next/link'
 
 export default function PublishingCoursePage() {
+  const trustedChannels = [
+    { name: 'Ari\'s Take (Ari Herstand)', url: 'https://www.youtube.com/@aristake', desc: 'Publishing, royalties, deals - the definitive source' },
+    { name: 'Burstimo', url: 'https://www.youtube.com/@Burstimo', desc: 'Music business including publishing basics' },
+    { name: 'DIY Musician (CD Baby)', url: 'https://www.youtube.com/@diymusiciancdba', desc: 'Publishing from the songwriter perspective' },
+    { name: 'Symphonic Distribution', url: 'https://www.youtube.com/@SymphonicDistribution', desc: 'Distribution and publishing fundamentals' },
+    { name: 'Songtrust', url: 'https://www.youtube.com/@Songtrust', desc: 'Publishing administration explained' }
+  ]
+
   const weeks = [
     {
       week: 1,
       title: 'What Is Music Publishing?',
       topics: ['The basics', 'Two copyrights', 'Publisher role'],
       videos: [
-        { title: 'Music publishing explained', url: 'https://www.youtube.com/results?search_query=music+publishing+explained+simply+beginners' },
-        { title: 'Two copyrights in music', url: 'https://www.youtube.com/results?search_query=copyright+in+music+explained+two+copyrights' },
-        { title: 'What does a publisher do', url: 'https://www.youtube.com/results?search_query=what+does+music+publisher+do+explained' }
+        { title: 'Music Publishing Explained - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=publishing+explained' },
+        { title: 'Two Copyrights in Music - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=copyright+master+publishing' },
+        { title: 'What Does a Publisher Do - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=publisher+what+does' }
       ]
     },
     {
@@ -17,9 +25,9 @@ export default function PublishingCoursePage() {
       title: 'Royalty Types',
       topics: ['Performance royalties', 'Mechanical royalties', 'Sync royalties'],
       videos: [
-        { title: 'Performance royalties', url: 'https://www.youtube.com/results?search_query=performance+royalties+explained+music' },
-        { title: 'Mechanical royalties', url: 'https://www.youtube.com/results?search_query=mechanical+royalties+explained+music' },
-        { title: 'All royalty types', url: 'https://www.youtube.com/results?search_query=all+music+royalty+types+explained+comparison' }
+        { title: 'Performance Royalties - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=performance+royalties' },
+        { title: 'Mechanical Royalties - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=mechanical+royalties' },
+        { title: 'All Royalty Types Explained - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=royalty+types' }
       ]
     },
     {
@@ -27,9 +35,9 @@ export default function PublishingCoursePage() {
       title: 'UK Collection Societies',
       topics: ['PRS', 'PPL', 'MCPS'],
       videos: [
-        { title: 'PRS explained', url: 'https://www.youtube.com/results?search_query=PRS+for+music+explained+how+it+works' },
-        { title: 'PPL explained', url: 'https://www.youtube.com/results?search_query=PPL+UK+explained+how+it+works' },
-        { title: 'PRS vs PPL difference', url: 'https://www.youtube.com/results?search_query=PRS+vs+PPL+difference+explained+UK' }
+        { title: 'PRS Explained - DIY Musician', url: 'https://www.youtube.com/@diymusiciancdba/search?query=PRS' },
+        { title: 'PPL Explained', url: 'https://www.youtube.com/results?search_query=PPL+UK+explained+music+royalties' },
+        { title: 'PRS vs PPL Difference - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=PRS+PPL' }
       ]
     },
     {
@@ -37,9 +45,9 @@ export default function PublishingCoursePage() {
       title: 'The Publisher\'s Role',
       topics: ['What publishers do', 'Sub-publishing', 'Sync teams'],
       videos: [
-        { title: 'What music publishers do', url: 'https://www.youtube.com/results?search_query=what+music+publishers+do+detailed' },
-        { title: 'Sub-publishing', url: 'https://www.youtube.com/results?search_query=sub+publishing+explained+international' },
-        { title: 'Publisher sync teams', url: 'https://www.youtube.com/results?search_query=publisher+sync+team+what+they+do' }
+        { title: 'What Publishers Actually Do - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=publisher+role+what+do' },
+        { title: 'Sub-Publishing Explained - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=sub+publishing' },
+        { title: 'Publisher Sync Teams - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=publisher+sync' }
       ]
     },
     {
@@ -47,9 +55,9 @@ export default function PublishingCoursePage() {
       title: 'Streaming Royalties Deep Dive',
       topics: ['How Spotify pays', 'The streaming pie', 'Pro-rata payments'],
       videos: [
-        { title: 'How Spotify pays artists', url: 'https://www.youtube.com/results?search_query=how+spotify+pays+artists+detailed+breakdown' },
-        { title: 'Streaming royalties flow', url: 'https://www.youtube.com/results?search_query=streaming+royalties+flow+explained+diagram' },
-        { title: 'The streaming pie', url: 'https://www.youtube.com/results?search_query=streaming+revenue+split+who+gets+what' }
+        { title: 'How Spotify Pays Artists - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=spotify+pay+royalties' },
+        { title: 'Streaming Royalties Flow - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=streaming+royalties' },
+        { title: 'The Streaming Pie Explained - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=streaming+money+split' }
       ]
     },
     {
@@ -57,9 +65,9 @@ export default function PublishingCoursePage() {
       title: 'Publishing Deals',
       topics: ['Deal types', 'Advances', 'Retention periods'],
       videos: [
-        { title: 'Publishing deal types', url: 'https://www.youtube.com/results?search_query=publishing+deal+types+music+explained' },
-        { title: 'Co-publishing deal', url: 'https://www.youtube.com/results?search_query=co+publishing+deal+explained+music' },
-        { title: 'Admin deal explained', url: 'https://www.youtube.com/results?search_query=admin+deal+publishing+explained' }
+        { title: 'Publishing Deal Types - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=publishing+deal+types' },
+        { title: 'Co-Publishing Deal Explained - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=co+publishing' },
+        { title: 'Admin Deal Explained - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=admin+deal+publishing' }
       ]
     },
     {
@@ -67,9 +75,9 @@ export default function PublishingCoursePage() {
       title: 'Writer Splits and Credits',
       topics: ['Songwriting splits', 'Split sheets', 'Sampling'],
       videos: [
-        { title: 'Songwriting splits', url: 'https://www.youtube.com/results?search_query=songwriting+splits+explained+collaboration' },
-        { title: 'Split sheets', url: 'https://www.youtube.com/results?search_query=split+sheet+explained+music' },
-        { title: 'Sampling and publishing', url: 'https://www.youtube.com/results?search_query=sampling+publishing+splits+explained' }
+        { title: 'Songwriting Splits - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=splits+songwriting' },
+        { title: 'Split Sheets Explained - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=split+sheet' },
+        { title: 'Sampling and Publishing - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=sampling+publishing' }
       ]
     },
     {
@@ -77,9 +85,9 @@ export default function PublishingCoursePage() {
       title: 'Metadata and Registration',
       topics: ['ISRC and ISWC codes', 'Why songs don\'t get paid', 'The black box'],
       videos: [
-        { title: 'Music metadata', url: 'https://www.youtube.com/results?search_query=music+metadata+explained+publishing' },
-        { title: 'ISRC and ISWC', url: 'https://www.youtube.com/results?search_query=ISRC+vs+ISWC+codes+explained+music' },
-        { title: 'The black box', url: 'https://www.youtube.com/results?search_query=black+box+royalties+unmatched+music' }
+        { title: 'Music Metadata Explained - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=metadata' },
+        { title: 'ISRC vs ISWC Codes - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=ISRC+ISWC' },
+        { title: 'The Black Box Explained', url: 'https://www.youtube.com/results?search_query=black+box+royalties+unmatched+music+publishing' }
       ]
     },
     {
@@ -87,9 +95,9 @@ export default function PublishingCoursePage() {
       title: 'Publishing and Sync Connection',
       topics: ['Sync from publishing side', 'Clearing rights', 'Covers and re-records'],
       videos: [
-        { title: 'Sync licensing publishing side', url: 'https://www.youtube.com/results?search_query=sync+licensing+publishing+side+explained' },
-        { title: 'Clearing sync rights', url: 'https://www.youtube.com/results?search_query=clearing+sync+rights+publishing+master' },
-        { title: 'Re-records and covers', url: 'https://www.youtube.com/results?search_query=re+record+cover+sync+licensing+publishing' }
+        { title: 'Sync from Publishing Side - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=sync+publishing' },
+        { title: 'Clearing Sync Rights - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=sync+clear' },
+        { title: 'Re-Records and Covers - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=cover+re+record' }
       ]
     },
     {
@@ -97,9 +105,9 @@ export default function PublishingCoursePage() {
       title: 'Catalogue Acquisitions',
       topics: ['Why catalogues sell', 'Hipgnosis', 'Valuation'],
       videos: [
-        { title: 'Catalogue acquisitions', url: 'https://www.youtube.com/results?search_query=music+catalogue+acquisition+explained' },
-        { title: 'Hipgnosis Songs Fund', url: 'https://www.youtube.com/results?search_query=hipgnosis+songs+fund+explained' },
-        { title: 'Bob Dylan sale', url: 'https://www.youtube.com/results?search_query=bob+dylan+catalogue+sale+universal' }
+        { title: 'Catalogue Acquisitions Explained', url: 'https://www.youtube.com/results?search_query=music+catalogue+acquisition+why+sell+hipgnosis' },
+        { title: 'Hipgnosis Songs Fund', url: 'https://www.youtube.com/results?search_query=hipgnosis+songs+fund+explained+how+works' },
+        { title: 'Bob Dylan Catalogue Sale', url: 'https://www.youtube.com/results?search_query=bob+dylan+catalogue+sale+why+universal' }
       ]
     },
     {
@@ -107,9 +115,9 @@ export default function PublishingCoursePage() {
       title: 'The Publishing Industry',
       topics: ['Major publishers', 'Career paths', 'Publishing A&R'],
       videos: [
-        { title: 'Major publishers', url: 'https://www.youtube.com/results?search_query=major+music+publishers+sony+universal+warner' },
-        { title: 'Careers in publishing', url: 'https://www.youtube.com/results?search_query=careers+in+music+publishing' },
-        { title: 'Kobalt explained', url: 'https://www.youtube.com/results?search_query=kobalt+music+publishing+how+it+works' }
+        { title: 'Major Publishers Explained - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=publisher+major' },
+        { title: 'Careers in Publishing - Songtrust', url: 'https://www.youtube.com/@Songtrust/search?query=career' },
+        { title: 'Kobalt Explained', url: 'https://www.youtube.com/results?search_query=kobalt+music+publishing+how+it+works+explained' }
       ]
     },
     {
@@ -126,11 +134,24 @@ export default function PublishingCoursePage() {
         <Link href="/" className="back-link">Home</Link>
 
         <h1>Publishing & Royalties Course</h1>
-        <p>12 weeks of technical knowledge that impresses in interviews. All video links are clickable.</p>
+        <p>12 weeks of technical knowledge that impresses in interviews.</p>
 
         <div className="card">
           <h2>Why This Course?</h2>
           <p>Publishing is complicated - most people don't understand it. If you do, you immediately stand out. This connects directly to your sync expertise (sync involves publishing rights).</p>
+        </div>
+
+        <div className="card">
+          <h2>Trusted YouTube Channels</h2>
+          <p>These are the experts. Subscribe and watch their publishing content:</p>
+          <div className="company-list">
+            {trustedChannels.map((channel, i) => (
+              <div key={i} className="company-item">
+                <a href={channel.url} target="_blank" rel="noopener">{channel.name}</a>
+                <span style={{ color: 'var(--text-secondary)', marginLeft: '0.5rem' }}>- {channel.desc}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="card">

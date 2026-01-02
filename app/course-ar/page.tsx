@@ -1,15 +1,24 @@
 import Link from 'next/link'
 
 export default function ARCoursePage() {
+  const trustedChannels = [
+    { name: 'Ari\'s Take (Ari Herstand)', url: 'https://www.youtube.com/@aristake', desc: 'Industry veteran, A&R fundamentals and deal structures' },
+    { name: 'Burstimo', url: 'https://www.youtube.com/@Burstimo', desc: 'Music business including artist development' },
+    { name: 'COLORS Studios', url: 'https://www.youtube.com/@COLORSxSTUDIOS', desc: 'Where A&Rs spot emerging talent - watch who they feature' },
+    { name: 'GRM Daily', url: 'https://www.youtube.com/@GRMdaily', desc: 'UK rap/grime - essential for understanding UK scene' },
+    { name: 'SBTV', url: 'https://www.youtube.com/@SBTVonline', desc: 'UK urban music - another key scouting source' },
+    { name: 'DIY Musician (CD Baby)', url: 'https://www.youtube.com/@diymusiciancdba', desc: 'Artist development from the artist perspective' }
+  ]
+
   const weeks = [
     {
       week: 1,
       title: 'What A&R Actually Is',
       topics: ['The role beyond the myth', 'Day-to-day reality', 'How A&R has changed'],
       videos: [
-        { title: 'What does A&R do', url: 'https://www.youtube.com/results?search_query=what+does+A%26R+actually+do+record+label' },
-        { title: 'A&R day in the life', url: 'https://www.youtube.com/results?search_query=A%26R+day+in+the+life+record+label' },
-        { title: 'Modern A&R explained', url: 'https://www.youtube.com/results?search_query=modern+A%26R+explained+2024' }
+        { title: 'What Does A&R Do - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=A%26R+what+does' },
+        { title: 'A&R Day in the Life', url: 'https://www.youtube.com/results?search_query=A%26R+day+in+the+life+record+label' },
+        { title: 'Modern A&R Explained - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=A%26R' }
       ]
     },
     {
@@ -17,8 +26,8 @@ export default function ARCoursePage() {
       title: 'Finding Artists',
       topics: ['Where A&Rs discover talent', 'Data tools', 'Scouting strategies'],
       videos: [
-        { title: 'How A&Rs find artists', url: 'https://www.youtube.com/results?search_query=how+A%26R+find+artists+2024' },
-        { title: 'Scouting on TikTok', url: 'https://www.youtube.com/results?search_query=scouting+artists+tiktok+A%26R' },
+        { title: 'How A&Rs Find Artists - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=find+artists+discover' },
+        { title: 'Scouting on TikTok/Social Media', url: 'https://www.youtube.com/results?search_query=A%26R+scouting+tiktok+social+media+find+artists' },
         { title: 'Chartmetric for A&R', url: 'https://www.youtube.com/results?search_query=chartmetric+A%26R+scouting+tutorial' }
       ]
     },
@@ -27,9 +36,9 @@ export default function ARCoursePage() {
       title: 'Evaluating Artists',
       topics: ['What makes someone signable', 'The A&R checklist', 'Red flags'],
       videos: [
-        { title: 'What makes an artist signable', url: 'https://www.youtube.com/results?search_query=what+makes+artist+signable+A%26R' },
-        { title: 'Artist evaluation criteria', url: 'https://www.youtube.com/results?search_query=A%26R+artist+evaluation+criteria' },
-        { title: 'Red flags when signing', url: 'https://www.youtube.com/results?search_query=red+flags+signing+artist+A%26R' }
+        { title: 'What Makes an Artist Signable - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=signable+sign+artist' },
+        { title: 'Artist Evaluation Criteria', url: 'https://www.youtube.com/results?search_query=A%26R+artist+evaluation+what+labels+look+for' },
+        { title: 'Red Flags When Signing Artists', url: 'https://www.youtube.com/results?search_query=red+flags+signing+artist+A%26R+label' }
       ]
     },
     {
@@ -37,9 +46,9 @@ export default function ARCoursePage() {
       title: 'Understanding Deals',
       topics: ['Record deal types', '360 deals', 'Advances and recoupment'],
       videos: [
-        { title: 'Record deals explained', url: 'https://www.youtube.com/results?search_query=record+deal+explained+types+music' },
-        { title: '360 deal breakdown', url: 'https://www.youtube.com/results?search_query=360+deal+breakdown+music+industry' },
-        { title: 'Advance and recoupment', url: 'https://www.youtube.com/results?search_query=advance+recoupment+record+deal+explained' }
+        { title: 'Record Deal Types - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=record+deal' },
+        { title: '360 Deal Breakdown', url: 'https://www.youtube.com/results?search_query=360+deal+explained+music+industry+good+bad' },
+        { title: 'Advances and Recoupment - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=advance+recoupment+deal' }
       ]
     },
     {
@@ -47,9 +56,9 @@ export default function ARCoursePage() {
       title: 'Demo Listening',
       topics: ['Processing submissions', 'What to listen for', 'Giving feedback'],
       videos: [
-        { title: 'How A&Rs listen to demos', url: 'https://www.youtube.com/results?search_query=how+A%26R+listen+demos+process' },
-        { title: 'What A&Rs hear in 10 seconds', url: 'https://www.youtube.com/results?search_query=what+A%26R+hear+first+10+seconds' },
-        { title: 'Why demos get rejected', url: 'https://www.youtube.com/results?search_query=why+demos+get+rejected+A%26R' }
+        { title: 'How A&Rs Listen to Demos', url: 'https://www.youtube.com/results?search_query=how+A%26R+listen+demos+process+what+they+hear' },
+        { title: 'What A&Rs Hear in 10 Seconds', url: 'https://www.youtube.com/results?search_query=A%26R+first+10+seconds+demo+what+they+hear' },
+        { title: 'Why Demos Get Rejected - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=demo+reject' }
       ],
       assignment: 'Listen to 5 demos on SoundCloud. For each, record your gut reaction, what works, what doesn\'t, and pass or pursue.'
     },
@@ -58,9 +67,9 @@ export default function ARCoursePage() {
       title: 'Artist Development',
       topics: ['The creative partnership', 'Working with producers', 'Songwriting camps'],
       videos: [
-        { title: 'Artist development explained', url: 'https://www.youtube.com/results?search_query=artist+development+record+label+explained' },
-        { title: 'Working with producers', url: 'https://www.youtube.com/results?search_query=A%26R+working+with+producers+matching+artists' },
-        { title: 'Songwriting camps', url: 'https://www.youtube.com/results?search_query=songwriting+camps+explained+music+industry' }
+        { title: 'Artist Development Explained - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=artist+development' },
+        { title: 'Working with Producers', url: 'https://www.youtube.com/results?search_query=A%26R+matching+artists+producers+how+it+works' },
+        { title: 'Songwriting Camps Explained', url: 'https://www.youtube.com/results?search_query=songwriting+camps+how+they+work+music+industry' }
       ]
     },
     {
@@ -68,9 +77,9 @@ export default function ARCoursePage() {
       title: 'The A&R Meeting',
       topics: ['Pitching artists internally', 'Building internal support', 'Competition'],
       videos: [
-        { title: 'A&R meeting process', url: 'https://www.youtube.com/results?search_query=A%26R+meeting+process+record+label' },
-        { title: 'Pitching an artist', url: 'https://www.youtube.com/results?search_query=pitching+artist+internally+A%26R+meeting' },
-        { title: 'A&R competition', url: 'https://www.youtube.com/results?search_query=A%26R+competition+signing+artists+labels' }
+        { title: 'A&R Meeting Process', url: 'https://www.youtube.com/results?search_query=A%26R+meeting+process+how+artists+get+signed' },
+        { title: 'Pitching an Artist Internally', url: 'https://www.youtube.com/results?search_query=pitching+artist+internally+label+meeting' },
+        { title: 'A&R Competition for Artists', url: 'https://www.youtube.com/results?search_query=labels+competing+sign+artist+A%26R+bidding' }
       ],
       assignment: 'Pick an unsigned artist. Record a 3-minute pitch as if presenting to your label.'
     },
@@ -79,9 +88,9 @@ export default function ARCoursePage() {
       title: 'Trends and Genre Knowledge',
       topics: ['Spotting trends', 'Genre evolution', 'UK music scene'],
       videos: [
-        { title: 'Music trends 2024', url: 'https://www.youtube.com/results?search_query=music+trends+2024+industry' },
-        { title: 'UK music scene trends', url: 'https://www.youtube.com/results?search_query=UK+music+scene+trends+2024' },
-        { title: 'Underground to mainstream', url: 'https://www.youtube.com/results?search_query=underground+to+mainstream+music+journey' }
+        { title: 'Music Trends 2024 - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=trends' },
+        { title: 'UK Music Scene Deep Dive', url: 'https://www.youtube.com/results?search_query=UK+music+scene+trends+grime+drill+rap' },
+        { title: 'Underground to Mainstream', url: 'https://www.youtube.com/results?search_query=underground+to+mainstream+how+genres+break' }
       ]
     },
     {
@@ -89,9 +98,9 @@ export default function ARCoursePage() {
       title: 'A&R and Other Departments',
       topics: ['Working with marketing', 'Label coordination', 'Manager relationships'],
       videos: [
-        { title: 'A&R and marketing', url: 'https://www.youtube.com/results?search_query=A%26R+marketing+working+together+label' },
-        { title: 'Label departments', url: 'https://www.youtube.com/results?search_query=record+label+departments+how+they+work+together' },
-        { title: 'A&R and managers', url: 'https://www.youtube.com/results?search_query=A%26R+artist+manager+relationship' }
+        { title: 'A&R and Marketing - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=A%26R+marketing' },
+        { title: 'How Label Departments Work Together', url: 'https://www.youtube.com/results?search_query=record+label+departments+work+together+explained' },
+        { title: 'A&R and Manager Relationship', url: 'https://www.youtube.com/results?search_query=A%26R+manager+relationship+how+they+work' }
       ]
     },
     {
@@ -99,9 +108,9 @@ export default function ARCoursePage() {
       title: 'A&R Stories and Case Studies',
       topics: ['Famous signings', 'What worked', 'Lessons learned'],
       videos: [
-        { title: 'How artists got signed', url: 'https://www.youtube.com/results?search_query=how+artists+got+signed+story+A%26R' },
-        { title: 'Billie Eilish signing', url: 'https://www.youtube.com/results?search_query=billie+eilish+signing+story+interscope' },
-        { title: 'Central Cee rise', url: 'https://www.youtube.com/results?search_query=central+cee+rise+story+signing' }
+        { title: 'How Artists Got Signed - Stories', url: 'https://www.youtube.com/results?search_query=how+famous+artists+got+signed+story+A%26R' },
+        { title: 'Billie Eilish Signing Story', url: 'https://www.youtube.com/results?search_query=billie+eilish+signing+story+interscope+how+discovered' },
+        { title: 'Central Cee Rise to Fame', url: 'https://www.youtube.com/results?search_query=central+cee+rise+story+how+he+blew+up' }
       ]
     },
     {
@@ -109,9 +118,9 @@ export default function ARCoursePage() {
       title: 'The A&R Career Path',
       topics: ['Getting into A&R', 'Building reputation', 'Networking'],
       videos: [
-        { title: 'How to get into A&R', url: 'https://www.youtube.com/results?search_query=how+to+get+into+A%26R+music+industry' },
-        { title: 'A&R career path', url: 'https://www.youtube.com/results?search_query=A%26R+career+path+progression' },
-        { title: 'A&R networking', url: 'https://www.youtube.com/results?search_query=A%26R+networking+music+industry' }
+        { title: 'How to Get Into A&R - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=A%26R+career+job' },
+        { title: 'A&R Career Path', url: 'https://www.youtube.com/results?search_query=A%26R+career+path+how+to+become+entry+level' },
+        { title: 'Music Industry Networking - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=networking' }
       ]
     },
     {
@@ -128,11 +137,24 @@ export default function ARCoursePage() {
         <Link href="/" className="back-link">Home</Link>
 
         <h1>A&R Foundations Course</h1>
-        <p>12 weeks building on your UMG A&R experience. All video links are clickable.</p>
+        <p>12 weeks building on your UMG A&R experience.</p>
 
         <div className="card">
           <h2>Why This Course?</h2>
           <p>A&R is the most competitive but most prestigious path. Your UMG A&R experience gives you real credibility - this course turns that into expertise.</p>
+        </div>
+
+        <div className="card">
+          <h2>Trusted YouTube Channels</h2>
+          <p>These are the experts. Subscribe and watch their A&R content:</p>
+          <div className="company-list">
+            {trustedChannels.map((channel, i) => (
+              <div key={i} className="company-item">
+                <a href={channel.url} target="_blank" rel="noopener">{channel.name}</a>
+                <span style={{ color: 'var(--text-secondary)', marginLeft: '0.5rem' }}>- {channel.desc}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="card">
@@ -184,6 +206,7 @@ export default function ARCoursePage() {
             <li><a href="https://open.spotify.com/playlist/37i9dQZF1DWWjGdmeTyeJ6" target="_blank" rel="noopener">Spotify Fresh Finds</a></li>
             <li><a href="https://www.youtube.com/@COLORSxSTUDIOS" target="_blank" rel="noopener">Colors Studios</a></li>
             <li><a href="https://www.youtube.com/@GRMdaily" target="_blank" rel="noopener">GRM Daily</a></li>
+            <li><a href="https://www.youtube.com/@SBTVonline" target="_blank" rel="noopener">SBTV</a></li>
           </ul>
         </div>
 

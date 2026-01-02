@@ -1,15 +1,24 @@
 import Link from 'next/link'
 
 export default function MarketingCoursePage() {
+  const trustedChannels = [
+    { name: 'Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes', desc: 'Music marketing strategies, TikTok, social media' },
+    { name: 'Burstimo', url: 'https://www.youtube.com/@Burstimo', desc: 'Music marketing, Spotify strategies, release campaigns' },
+    { name: 'Andrew Southworth', url: 'https://www.youtube.com/@AndrewSouthworth', desc: 'Spotify algorithm, playlist strategies' },
+    { name: 'Ari\'s Take (Ari Herstand)', url: 'https://www.youtube.com/@aristake', desc: 'Industry veteran, marketing fundamentals' },
+    { name: 'Two Story Melody', url: 'https://www.youtube.com/@TwoStoryMelody', desc: 'Playlisting, Spotify marketing' },
+    { name: 'DIY Musician (CD Baby)', url: 'https://www.youtube.com/@diymusiciancdba', desc: 'Release strategies, marketing basics' }
+  ]
+
   const weeks = [
     {
       week: 1,
       title: 'Music Marketing Overview',
       topics: ['What label marketing does', 'Release campaigns', 'Marketing calendar'],
       videos: [
-        { title: 'Music marketing explained', url: 'https://www.youtube.com/results?search_query=music+marketing+explained+record+label' },
-        { title: 'Release campaign timeline', url: 'https://www.youtube.com/results?search_query=music+release+campaign+timeline+strategy' },
-        { title: 'Label marketing team', url: 'https://www.youtube.com/results?search_query=record+label+marketing+team+what+they+do' }
+        { title: 'Music Marketing Explained - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=music+marketing+explained' },
+        { title: 'Release Campaign Strategy - Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes/search?query=release+campaign' },
+        { title: 'Label Marketing Team - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=record+label+marketing' }
       ]
     },
     {
@@ -17,9 +26,9 @@ export default function MarketingCoursePage() {
       title: 'Spotify Deep Dive',
       topics: ['Spotify algorithm', 'Playlist ecosystem', 'Spotify for Artists'],
       videos: [
-        { title: 'Spotify algorithm 2024', url: 'https://www.youtube.com/results?search_query=spotify+algorithm+how+it+works+2024' },
-        { title: 'Editorial vs algorithmic playlists', url: 'https://www.youtube.com/results?search_query=editorial+vs+algorithmic+playlists+spotify' },
-        { title: 'Spotify pitching', url: 'https://www.youtube.com/results?search_query=how+to+pitch+spotify+playlist+editors' }
+        { title: 'Spotify Algorithm 2024 - Andrew Southworth', url: 'https://www.youtube.com/@AndrewSouthworth/search?query=spotify+algorithm' },
+        { title: 'Editorial vs Algorithmic Playlists - Two Story Melody', url: 'https://www.youtube.com/@TwoStoryMelody/search?query=playlist' },
+        { title: 'Spotify Pitching - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=spotify+pitch' }
       ]
     },
     {
@@ -27,9 +36,9 @@ export default function MarketingCoursePage() {
       title: 'TikTok Marketing',
       topics: ['TikTok music strategy', 'Content that works', 'Going viral'],
       videos: [
-        { title: 'TikTok music marketing', url: 'https://www.youtube.com/results?search_query=TikTok+music+marketing+strategy+2024' },
-        { title: 'Songs that blew up on TikTok', url: 'https://www.youtube.com/results?search_query=songs+that+blew+up+on+TikTok+how' },
-        { title: 'TikTok influencer campaigns', url: 'https://www.youtube.com/results?search_query=TikTok+influencer+music+campaign' }
+        { title: 'TikTok Music Marketing - Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes/search?query=tiktok+music' },
+        { title: 'Songs That Blew Up on TikTok - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=tiktok+viral' },
+        { title: 'TikTok Strategy 2024 - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=tiktok' }
       ]
     },
     {
@@ -37,9 +46,9 @@ export default function MarketingCoursePage() {
       title: 'Instagram & YouTube',
       topics: ['Instagram Reels', 'YouTube Shorts', 'Long-form vs short-form'],
       videos: [
-        { title: 'Instagram music marketing', url: 'https://www.youtube.com/results?search_query=instagram+music+marketing+2024' },
-        { title: 'YouTube Shorts strategy', url: 'https://www.youtube.com/results?search_query=youtube+shorts+music+promotion' },
-        { title: 'Cross-platform strategy', url: 'https://www.youtube.com/results?search_query=cross+platform+social+media+music+marketing' }
+        { title: 'Instagram for Musicians - Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes/search?query=instagram' },
+        { title: 'YouTube Shorts Strategy - Andrew Southworth', url: 'https://www.youtube.com/@AndrewSouthworth/search?query=youtube+shorts' },
+        { title: 'Cross-Platform Strategy - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=social+media+strategy' }
       ]
     },
     {
@@ -47,9 +56,9 @@ export default function MarketingCoursePage() {
       title: 'Paid Advertising',
       topics: ['Meta ads', 'TikTok ads', 'Budget allocation'],
       videos: [
-        { title: 'Music Facebook ads', url: 'https://www.youtube.com/results?search_query=facebook+ads+music+promotion+2024' },
-        { title: 'TikTok spark ads', url: 'https://www.youtube.com/results?search_query=TikTok+spark+ads+music+promotion' },
-        { title: 'Ad budget for musicians', url: 'https://www.youtube.com/results?search_query=advertising+budget+musicians+how+much' }
+        { title: 'Facebook/Instagram Ads for Music - Andrew Southworth', url: 'https://www.youtube.com/@AndrewSouthworth/search?query=facebook+ads' },
+        { title: 'TikTok Spark Ads - Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes/search?query=tiktok+ads' },
+        { title: 'Ad Budget Strategy - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=advertising+budget' }
       ]
     },
     {
@@ -57,9 +66,9 @@ export default function MarketingCoursePage() {
       title: 'Data & Analytics',
       topics: ['Key metrics', 'Chartmetric basics', 'Reading data'],
       videos: [
-        { title: 'Music analytics explained', url: 'https://www.youtube.com/results?search_query=music+analytics+explained+metrics' },
-        { title: 'Chartmetric tutorial', url: 'https://www.youtube.com/results?search_query=chartmetric+tutorial+how+to+use' },
-        { title: 'Spotify analytics', url: 'https://www.youtube.com/results?search_query=spotify+for+artists+analytics+explained' }
+        { title: 'Music Analytics Explained - Andrew Southworth', url: 'https://www.youtube.com/@AndrewSouthworth/search?query=analytics' },
+        { title: 'Chartmetric Tutorial', url: 'https://www.youtube.com/results?search_query=chartmetric+tutorial+how+to+use+music' },
+        { title: 'Spotify for Artists Analytics - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=spotify+analytics' }
       ]
     },
     {
@@ -67,9 +76,9 @@ export default function MarketingCoursePage() {
       title: 'Press & PR',
       topics: ['Press campaigns', 'Music blogs', 'Press releases'],
       videos: [
-        { title: 'Music PR explained', url: 'https://www.youtube.com/results?search_query=music+PR+how+it+works+press+campaign' },
-        { title: 'Music blogs 2024', url: 'https://www.youtube.com/results?search_query=music+blogs+still+relevant+2024' },
-        { title: 'Press release tips', url: 'https://www.youtube.com/results?search_query=music+press+release+how+to+write' }
+        { title: 'Music PR Explained - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=PR+press' },
+        { title: 'Getting Press Coverage - DIY Musician', url: 'https://www.youtube.com/@diymusiciancdba/search?query=press+PR' },
+        { title: 'Music Blogs 2024 - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=blog+press' }
       ]
     },
     {
@@ -77,9 +86,9 @@ export default function MarketingCoursePage() {
       title: 'Campaign Case Studies',
       topics: ['Successful campaigns', 'What worked', 'Lessons learned'],
       videos: [
-        { title: 'Olivia Rodrigo campaign', url: 'https://www.youtube.com/results?search_query=olivia+rodrigo+drivers+license+marketing+campaign' },
-        { title: 'Central Cee rise', url: 'https://www.youtube.com/results?search_query=central+cee+marketing+rise+to+fame' },
-        { title: 'Raye campaign', url: 'https://www.youtube.com/results?search_query=raye+escape+from+bmlg+campaign' }
+        { title: 'Olivia Rodrigo Marketing Analysis', url: 'https://www.youtube.com/results?search_query=olivia+rodrigo+drivers+license+marketing+campaign+strategy' },
+        { title: 'How Central Cee Blew Up', url: 'https://www.youtube.com/results?search_query=central+cee+marketing+strategy+how+he+blew+up' },
+        { title: 'Raye\'s Independent Success', url: 'https://www.youtube.com/results?search_query=raye+bmlg+independent+success+marketing' }
       ]
     },
     {
@@ -87,9 +96,9 @@ export default function MarketingCoursePage() {
       title: 'International Marketing',
       topics: ['Global campaigns', 'Territory strategy', 'Local vs global'],
       videos: [
-        { title: 'International music marketing', url: 'https://www.youtube.com/results?search_query=international+music+marketing+strategy' },
-        { title: 'Breaking artists globally', url: 'https://www.youtube.com/results?search_query=breaking+artists+globally+strategy' },
-        { title: 'Local market strategy', url: 'https://www.youtube.com/results?search_query=local+market+music+marketing+territory' }
+        { title: 'International Music Marketing - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=international+global' },
+        { title: 'Breaking Artists Globally', url: 'https://www.youtube.com/results?search_query=breaking+artists+globally+strategy+international' },
+        { title: 'Territory Marketing Strategy', url: 'https://www.youtube.com/results?search_query=music+marketing+territory+strategy+international' }
       ]
     },
     {
@@ -97,9 +106,9 @@ export default function MarketingCoursePage() {
       title: 'Content Strategy',
       topics: ['Content pillars', 'Content calendars', 'Working with artists'],
       videos: [
-        { title: 'Music content strategy', url: 'https://www.youtube.com/results?search_query=music+content+strategy+social+media' },
-        { title: 'Content calendar', url: 'https://www.youtube.com/results?search_query=social+media+content+calendar+music' },
-        { title: 'Working with artists on content', url: 'https://www.youtube.com/results?search_query=helping+artists+create+content' }
+        { title: 'Content Strategy for Music - Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes/search?query=content+strategy' },
+        { title: 'Content Calendar Tips - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=content+calendar' },
+        { title: 'Working with Artists on Content - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=content+artist' }
       ]
     },
     {
@@ -107,9 +116,9 @@ export default function MarketingCoursePage() {
       title: 'Marketing Career Path',
       topics: ['Jobs in music marketing', 'Skills needed', 'Building portfolio'],
       videos: [
-        { title: 'Music marketing jobs', url: 'https://www.youtube.com/results?search_query=music+marketing+jobs+entry+level' },
-        { title: 'Music marketing career', url: 'https://www.youtube.com/results?search_query=music+marketing+career+path' },
-        { title: 'Marketing portfolio', url: 'https://www.youtube.com/results?search_query=marketing+portfolio+music+industry' }
+        { title: 'Music Marketing Jobs - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=marketing+job+career' },
+        { title: 'Music Industry Careers - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=career+job' },
+        { title: 'Building a Marketing Portfolio', url: 'https://www.youtube.com/results?search_query=music+marketing+portfolio+entry+level' }
       ]
     },
     {
@@ -126,11 +135,24 @@ export default function MarketingCoursePage() {
         <Link href="/" className="back-link">Home</Link>
 
         <h1>Marketing Specialist Course</h1>
-        <p>12 weeks building on your UMG Marketing experience. All video links are clickable.</p>
+        <p>12 weeks building on your UMG Marketing experience.</p>
 
         <div className="card">
           <h2>Why This Course?</h2>
           <p>You worked in Marketing AND International Marketing at UMG. This course goes deeper on the platforms and strategies modern labels use.</p>
+        </div>
+
+        <div className="card">
+          <h2>Trusted YouTube Channels</h2>
+          <p>These are the experts. Subscribe and watch their marketing content:</p>
+          <div className="company-list">
+            {trustedChannels.map((channel, i) => (
+              <div key={i} className="company-item">
+                <a href={channel.url} target="_blank" rel="noopener">{channel.name}</a>
+                <span style={{ color: 'var(--text-secondary)', marginLeft: '0.5rem' }}>- {channel.desc}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         {weeks.map((w) => (

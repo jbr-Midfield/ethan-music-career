@@ -1,15 +1,24 @@
 import Link from 'next/link'
 
 export default function FoundationCoursePage() {
+  const trustedChannels = [
+    { name: 'Ari\'s Take (Ari Herstand)', url: 'https://www.youtube.com/@aristake', desc: 'Industry veteran - royalties, deals, labels, everything' },
+    { name: 'Burstimo', url: 'https://www.youtube.com/@Burstimo', desc: 'Music business fundamentals, marketing, streaming' },
+    { name: 'Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes', desc: 'Music marketing, social media, artist advice' },
+    { name: 'DIY Musician (CD Baby)', url: 'https://www.youtube.com/@diymusiciancdba', desc: 'Distribution, royalties, getting started' },
+    { name: 'Andrew Southworth', url: 'https://www.youtube.com/@AndrewSouthworth', desc: 'Spotify, streaming analytics, music marketing' },
+    { name: 'Symphonic Distribution', url: 'https://www.youtube.com/@SymphonicDistribution', desc: 'Distribution, sync, music business basics' }
+  ]
+
   const weeks = [
     {
       week: 1,
       title: 'How the Industry Works',
       topics: ['Major vs indie labels', 'Label departments', 'How money flows'],
       videos: [
-        { title: 'How major record labels work', url: 'https://www.youtube.com/results?search_query=how+major+record+labels+work+explained' },
-        { title: 'Major vs indie labels', url: 'https://www.youtube.com/results?search_query=major+vs+indie+record+labels+differences' },
-        { title: 'How artists get paid', url: 'https://www.youtube.com/results?search_query=how+do+artists+get+paid+streaming' }
+        { title: 'How Major Labels Work - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=major+label' },
+        { title: 'Major vs Indie Labels - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=major+indie+label' },
+        { title: 'How Artists Get Paid - DIY Musician', url: 'https://www.youtube.com/@diymusiciancdba/search?query=get+paid+money' }
       ]
     },
     {
@@ -17,9 +26,9 @@ export default function FoundationCoursePage() {
       title: 'Music Rights & Royalties',
       topics: ['Two copyrights', 'Master vs publishing', 'PRS, PPL, MCPS'],
       videos: [
-        { title: 'Music royalties explained', url: 'https://www.youtube.com/results?search_query=music+royalties+explained+simply' },
-        { title: 'Master vs publishing', url: 'https://www.youtube.com/results?search_query=master+vs+publishing+rights+explained' },
-        { title: 'PRS explained', url: 'https://www.youtube.com/results?search_query=PRS+for+music+explained' }
+        { title: 'Music Royalties Explained - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=royalties' },
+        { title: 'Master vs Publishing - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=master+publishing' },
+        { title: 'PRS Explained - DIY Musician', url: 'https://www.youtube.com/@diymusiciancdba/search?query=PRS+royalties' }
       ]
     },
     {
@@ -27,9 +36,9 @@ export default function FoundationCoursePage() {
       title: 'Streaming & Distribution',
       topics: ['How Spotify works', 'Distribution companies', 'Streaming payments'],
       videos: [
-        { title: 'How Spotify algorithm works', url: 'https://www.youtube.com/results?search_query=how+spotify+algorithm+works' },
-        { title: 'Music distribution explained', url: 'https://www.youtube.com/results?search_query=music+distribution+explained+2024' },
-        { title: 'Spotify for Artists', url: 'https://www.youtube.com/results?search_query=spotify+for+artists+tutorial' }
+        { title: 'Spotify Algorithm - Andrew Southworth', url: 'https://www.youtube.com/@AndrewSouthworth/search?query=spotify+algorithm' },
+        { title: 'Music Distribution - Symphonic', url: 'https://www.youtube.com/@SymphonicDistribution/search?query=distribution' },
+        { title: 'Spotify for Artists - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=spotify+artists' }
       ]
     },
     {
@@ -37,9 +46,9 @@ export default function FoundationCoursePage() {
       title: 'A&R Fundamentals',
       topics: ['What A&R does', 'Finding artists', 'Signing decisions'],
       videos: [
-        { title: 'What does A&R do', url: 'https://www.youtube.com/results?search_query=what+does+A%26R+actually+do' },
-        { title: 'How labels find artists', url: 'https://www.youtube.com/results?search_query=how+record+labels+find+artists' },
-        { title: 'A&R interview', url: 'https://www.youtube.com/results?search_query=A%26R+interview+record+label' }
+        { title: 'What Does A&R Do - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=A%26R' },
+        { title: 'How Labels Find Artists', url: 'https://www.youtube.com/results?search_query=how+record+labels+find+artists+A%26R' },
+        { title: 'A&R Explained - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=A%26R' }
       ]
     },
     {
@@ -47,9 +56,9 @@ export default function FoundationCoursePage() {
       title: 'Music Marketing Basics',
       topics: ['Release campaigns', 'Social media strategy', 'Content creation'],
       videos: [
-        { title: 'Music marketing explained', url: 'https://www.youtube.com/results?search_query=music+marketing+explained+2024' },
-        { title: 'Release campaign timeline', url: 'https://www.youtube.com/results?search_query=music+release+campaign+timeline' },
-        { title: 'TikTok music marketing', url: 'https://www.youtube.com/results?search_query=TikTok+music+marketing+strategy' }
+        { title: 'Music Marketing - Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes/search?query=music+marketing' },
+        { title: 'Release Campaign - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=release+campaign' },
+        { title: 'TikTok Music Marketing - Damian Keyes', url: 'https://www.youtube.com/@DamianKeyes/search?query=tiktok' }
       ]
     },
     {
@@ -57,9 +66,9 @@ export default function FoundationCoursePage() {
       title: 'Sync Licensing Intro',
       topics: ['What is sync', 'TV, film, ads', 'How sync deals work'],
       videos: [
-        { title: 'Sync licensing explained', url: 'https://www.youtube.com/results?search_query=sync+licensing+explained+music' },
-        { title: 'Music supervisor', url: 'https://www.youtube.com/results?search_query=music+supervisor+interview+how+they+pick+songs' },
-        { title: 'Famous sync placements', url: 'https://www.youtube.com/results?search_query=famous+sync+placements+music+TV+film' }
+        { title: 'Sync Licensing Explained - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=sync' },
+        { title: 'Music Supervisor Interview', url: 'https://www.youtube.com/results?search_query=music+supervisor+interview+how+they+pick+songs' },
+        { title: 'Sync Basics - Symphonic', url: 'https://www.youtube.com/@SymphonicDistribution/search?query=sync' }
       ]
     },
     {
@@ -67,9 +76,9 @@ export default function FoundationCoursePage() {
       title: 'Music Publishing',
       topics: ['Publisher role', 'Publishing deals', 'Songwriter royalties'],
       videos: [
-        { title: 'Music publishing explained', url: 'https://www.youtube.com/results?search_query=music+publishing+explained+simply' },
-        { title: 'Publishing deals', url: 'https://www.youtube.com/results?search_query=music+publishing+deal+types+explained' },
-        { title: 'Songwriter royalties', url: 'https://www.youtube.com/results?search_query=how+songwriters+get+paid' }
+        { title: 'Music Publishing Explained - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=publishing' },
+        { title: 'Publishing Deals - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=publishing+deal' },
+        { title: 'How Songwriters Get Paid - DIY Musician', url: 'https://www.youtube.com/@diymusiciancdba/search?query=songwriter+paid' }
       ]
     },
     {
@@ -77,9 +86,9 @@ export default function FoundationCoursePage() {
       title: 'Artist Management',
       topics: ['Manager role', 'Manager vs label', 'Building a team'],
       videos: [
-        { title: 'What does a music manager do', url: 'https://www.youtube.com/results?search_query=what+does+music+manager+do' },
-        { title: 'Manager vs label', url: 'https://www.youtube.com/results?search_query=music+manager+vs+record+label+difference' },
-        { title: 'Artist management interview', url: 'https://www.youtube.com/results?search_query=artist+manager+interview+how+they+work' }
+        { title: 'What Music Managers Do - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=manager' },
+        { title: 'Manager vs Label - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=manager+label' },
+        { title: 'Artist Management Explained', url: 'https://www.youtube.com/results?search_query=artist+manager+interview+how+they+work' }
       ]
     },
     {
@@ -87,9 +96,9 @@ export default function FoundationCoursePage() {
       title: 'Live Music Business',
       topics: ['Touring economics', 'Booking agents', 'Festival industry'],
       videos: [
-        { title: 'How touring works', url: 'https://www.youtube.com/results?search_query=how+music+touring+works+economics' },
-        { title: 'Booking agent role', url: 'https://www.youtube.com/results?search_query=what+does+booking+agent+do+music' },
-        { title: 'Festival business', url: 'https://www.youtube.com/results?search_query=music+festival+business+how+it+works' }
+        { title: 'How Touring Works - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=touring+live' },
+        { title: 'Booking Agent Role - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=booking+agent' },
+        { title: 'Festival Business Explained', url: 'https://www.youtube.com/results?search_query=music+festival+business+how+it+works' }
       ]
     },
     {
@@ -97,9 +106,9 @@ export default function FoundationCoursePage() {
       title: 'UK Music Industry',
       topics: ['UK scene history', 'Key UK labels', 'British music culture'],
       videos: [
-        { title: 'UK music industry', url: 'https://www.youtube.com/results?search_query=UK+music+industry+explained' },
-        { title: 'UK grime history', url: 'https://www.youtube.com/results?search_query=UK+grime+history+documentary' },
-        { title: 'British music evolution', url: 'https://www.youtube.com/results?search_query=british+music+history+evolution' }
+        { title: 'UK Music Industry Overview', url: 'https://www.youtube.com/results?search_query=UK+music+industry+explained' },
+        { title: 'UK Grime History', url: 'https://www.youtube.com/results?search_query=grime+history+documentary+UK' },
+        { title: 'British Music Evolution', url: 'https://www.youtube.com/results?search_query=british+music+history+evolution+documentary' }
       ]
     },
     {
@@ -107,9 +116,9 @@ export default function FoundationCoursePage() {
       title: 'Getting Into the Industry',
       topics: ['Entry-level jobs', 'Networking', 'Building experience'],
       videos: [
-        { title: 'Music industry jobs', url: 'https://www.youtube.com/results?search_query=music+industry+jobs+entry+level' },
-        { title: 'How to get into music industry', url: 'https://www.youtube.com/results?search_query=how+to+get+job+music+industry+2024' },
-        { title: 'Networking in music', url: 'https://www.youtube.com/results?search_query=networking+music+industry+tips' }
+        { title: 'Music Industry Jobs - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=job+career' },
+        { title: 'Getting Into Music Industry - Burstimo', url: 'https://www.youtube.com/@Burstimo/search?query=job+career' },
+        { title: 'Networking Tips', url: 'https://www.youtube.com/results?search_query=networking+music+industry+tips+how+to' }
       ]
     },
     {
@@ -117,8 +126,8 @@ export default function FoundationCoursePage() {
       title: 'Your Career Pitch',
       topics: ['CV and cover letters', 'Interview prep', 'Your personal brand'],
       videos: [
-        { title: 'Music industry interview', url: 'https://www.youtube.com/results?search_query=music+industry+interview+tips' },
-        { title: 'Why music industry', url: 'https://www.youtube.com/results?search_query=why+do+you+want+work+music+industry' }
+        { title: 'Music Industry Interview Tips - Ari\'s Take', url: 'https://www.youtube.com/@aristake/search?query=interview' },
+        { title: 'Why Music Industry Answer', url: 'https://www.youtube.com/results?search_query=why+do+you+want+work+music+industry+interview' }
       ]
     }
   ]
@@ -130,6 +139,19 @@ export default function FoundationCoursePage() {
 
         <h1>Music Industry Foundation Course</h1>
         <p>12 weeks covering everything you need to know. All video links are clickable - no reading required.</p>
+
+        <div className="card">
+          <h2>Trusted YouTube Channels</h2>
+          <p>These are the experts. Subscribe to all of them:</p>
+          <div className="company-list">
+            {trustedChannels.map((channel, i) => (
+              <div key={i} className="company-item">
+                <a href={channel.url} target="_blank" rel="noopener">{channel.name}</a>
+                <span style={{ color: 'var(--text-secondary)', marginLeft: '0.5rem' }}>- {channel.desc}</span>
+              </div>
+            ))}
+          </div>
+        </div>
 
         <div className="card">
           <h2>Core Audiobooks</h2>
