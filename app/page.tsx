@@ -5,52 +5,68 @@ export default function Home() {
     {
       href: '/cv',
       title: 'Your CV',
-      description: 'Your personalised CV ready for applications'
+      description: 'Ready to drop into applications',
+      icon: '📄'
+    },
+    {
+      href: '/progress',
+      title: 'Learning Progress',
+      description: 'Track your 297 videos across 5 courses',
+      icon: '✅'
     },
     {
       href: '/companies',
-      title: 'Record Companies',
-      description: '150+ music companies with direct career page links'
+      title: 'Record Labels & Publishers',
+      description: '150+ companies with career page links',
+      icon: '🏢'
     },
     {
       href: '/job-titles',
-      title: 'Job Titles Guide',
-      description: '9 role categories with what you need to know for each'
+      title: 'Industry Roles',
+      description: '9 role categories explained',
+      icon: '💼'
     },
     {
       href: '/course-foundation',
-      title: 'Music Industry Foundation',
-      description: '12-week course covering the fundamentals'
+      title: 'Industry Foundations',
+      description: '12-week fundamentals course',
+      icon: '🎓'
     },
     {
       href: '/course-sync',
-      title: 'Sync Specialist Course',
-      description: '12-week advanced sync licensing programme'
+      title: 'Sync Licensing',
+      description: '12-week sync specialist programme',
+      icon: '🎬'
     },
     {
       href: '/course-marketing',
-      title: 'Marketing Specialist Course',
-      description: '12-week digital marketing deep dive'
+      title: 'Music Marketing',
+      description: '12-week digital marketing deep dive',
+      icon: '📱'
     },
     {
       href: '/course-ar',
-      title: 'A&R Foundations Course',
-      description: '12-week artist discovery and development programme'
+      title: 'A&R Foundations',
+      description: '12-week artist development course',
+      icon: '🎤'
     },
     {
       href: '/course-publishing',
-      title: 'Publishing & Royalties Course',
-      description: '12-week music publishing masterclass'
+      title: 'Publishing & Royalties',
+      description: '12-week publishing masterclass',
+      icon: '💰'
     },
     {
       href: '/interview-questions',
-      title: 'Interview Questions',
-      description: '90 questions with what they really want to hear'
+      title: 'Interview Prep',
+      description: '90 questions with winning answers',
+      icon: '🎯'
     },
     {
       href: '/artist-rosters',
-      title: 'Label Artist Rosters',
-      description: 'Top artists at each label with Spotify links'
+      title: 'Label Rosters',
+      description: 'Who\'s signed where + Spotify links',
+      icon: '🎵'
     }
   ]
 
@@ -58,16 +74,13 @@ export default function Home() {
     <main>
       <header className="header">
         <div className="container">
-          <h1>Hey Ethan</h1>
-          <p>Your personalised music industry career toolkit. Everything here is designed to be easy to use on your phone.</p>
+          <h1>What's good, Ethan</h1>
+          <p>Your music industry toolkit. Everything you need to break in.</p>
         </div>
       </header>
 
       <div className="container">
         <section className="section">
-          <h2>Your Resources</h2>
-          <p>Tap any card to explore. All courses include audio and video - no reading walls of text.</p>
-
           <div className="resource-grid">
             {resources.map((resource) => (
               <Link
@@ -75,6 +88,7 @@ export default function Home() {
                 href={resource.href}
                 className="resource-card"
               >
+                <span className="card-icon">{resource.icon}</span>
                 <h2>{resource.title}</h2>
                 <p>{resource.description}</p>
               </Link>
@@ -82,9 +96,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section card">
-          <h2>Quick Tip</h2>
-          <p>Start with the <strong>Job Titles Guide</strong> to figure out which roles interest you most. Then check which courses match those roles.</p>
+        <section className="section card tip-card">
+          <h2>Quick Start</h2>
+          <p>Not sure where to begin? Hit up the <strong>Industry Roles</strong> guide first to figure out what roles match your vibe. Then check which courses fit.</p>
         </section>
       </div>
     </main>
